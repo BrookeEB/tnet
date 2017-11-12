@@ -1,6 +1,8 @@
 # This is tNet
 tNet is a pathfinding utility for [Starborne](https://www.starborne.com/)
 
+You can download the v0.1 release [here](https://github.com/jzmiller1/tnet/files/1464357/tNet.zip).
+
 ## How it Works
 tnet reads data from a CSV file you provide.  The CSV contains the coordinates of
 your stations and the speed boost provided from any stargates at that station. 
