@@ -43,7 +43,7 @@ A quick and useful visualization of the data is to use the hexagonal coordinates
 stations in the example data to show the general spatial arrangement of the stations (don't
 worry it is using the proper hexagon based calculations in the program):
 
-![Example Data Visualization](https://raw.githubusercontent.com/jzmiller1/tnet/master/example_data_visualization.JPG)
+![Example Data Visualization](https://raw.githubusercontent.com/jzmiller1/tnet/master/example_data_visualization.jpg)
 
 None of the stations flagged as ours, flagged as self in the example data, have a stargate 
 bonus to movement.  The friendly station that we don't own, Dev Hacks Palace, is fairly 
