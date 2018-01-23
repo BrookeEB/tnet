@@ -111,6 +111,7 @@ class Widgets(wx.Panel):
             self.file_text.SetValue(paths[0])
             self.build_network()
             nodes = list(nx.nodes(self.network))
+            nodes.sort()
             self.start.SetItems(nodes)
             self.stop.SetItems(nodes)
         dlg.Destroy()
