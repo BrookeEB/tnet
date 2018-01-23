@@ -11,6 +11,9 @@ def hex_distance(a, b):
 
 
 def get_minutes(a, b, fspeed, data):
+    # prevent movement from other to other by increasing weight to a massive number
+    if data[a]['owner'] == 'other' and data[b]['owner'] == 'other':
+        return 99999999
     d = hex_distance(data[a], data[b])
     speed = (fspeed + data[b]['boost']) / 60.0
     return d / speed 
@@ -35,6 +38,7 @@ def build_network(path, fspeed):
     data = new_data
 
     # build network
+    # start and end are station name strings
     links = [(start, end)
              for start, end in
              permutations(data.keys(), 2)]
@@ -43,6 +47,8 @@ def build_network(path, fspeed):
              for start, end in links]
 
     tnet = nx.DiGraph()
+    # DiGraph.add_weighted_edges_from(ebunch, weight='weight', **attr)
+    # Add all the edges in ebunch as weighted edges with specified weights.
     tnet.add_weighted_edges_from(links)
     return tnet
 

@@ -1,9 +1,10 @@
-station,q,r,boost
-Rustic Dairy,22,-15,0
-Tire Swing,7,-8,0
-Yonder Pen,-2,0,0
-Grated Gate,-9,5,0
-Gravel Road,7,-20,0
-Patio Chimes,9,-23,0
-The New Coop,-20,-9,0
-Dev Hacks Palace,-4,-7,10
+station,q,r,boost,owner
+Rustic Dairy,22,-15,0,self
+Tire Swing,7,-8,0,self
+Yonder Pen,-2,0,0,self
+Grated Gate,-9,5,0,self
+Gravel Road,7,-20,0,self
+Patio Chimes,9,-23,0,self
+The New Coop,-20,-9,0,self
+Dev Hacks Palace,-1,-8,10,other
+Someone Else's Station,4,-4,0,other
