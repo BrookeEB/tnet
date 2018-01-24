@@ -22,7 +22,7 @@ class MainFrame(wx.Frame):
 
     def CreateMenu(self):
         menu = wx.Menu()
-        menu.Append(wx.ID_ABOUT, "About", "tNet 0.1")
+        menu.Append(wx.ID_ABOUT, "About", "tNet 0.1.1")
 
         menuBar = wx.MenuBar()
         menuBar.Append(menu, "Menu")
@@ -71,11 +71,13 @@ class Widgets(wx.Panel):
         self.statBoxSizerV.Add(boxSizerH, 1, wx.ALL)
 
         self.start = wx.ComboBox(self.panel, -1, "Select Start",
-                            choices=['Open A Data File'], size=(120, -1))
+                            choices=['Open A Data File'], size=(457, -1))
         self.stop = wx.ComboBox(self.panel, -1, "Select Target",
-                           choices=['Open A Data File'], size=(120, -1))
+                           choices=['Open A Data File'], size=(457, -1))
         self.statBoxSizerV.Add(self.start)
+        self.statBoxSizerV.AddSpacer(2)
         self.statBoxSizerV.Add(self.stop)
+        self.statBoxSizerV.AddSpacer(2)
 
         self.fspeed = wx.Slider(self.panel, value=10, minValue=4, maxValue=30,
                                 style=wx.SL_HORIZONTAL | wx.SL_LABELS)
@@ -90,9 +92,9 @@ class Widgets(wx.Panel):
                                flag=wx.EXPAND | wx.ALIGN_CENTER_HORIZONTAL | wx.TOP
                                )
 
-        button = wx.Button(self.panel, id=wx.ID_ANY, label="Solve")
-        button.Bind(wx.EVT_BUTTON, self.solve)
-        self.statBoxSizerV.Add(button)
+        solve_button = wx.Button(self.panel, id=wx.ID_ANY, label="Solve")
+        solve_button.Bind(wx.EVT_BUTTON, self.solve)
+        self.statBoxSizerV.Add(solve_button, 0, wx.CENTER)
 
     def onOpenFile(self, event):
         """

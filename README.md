@@ -1,7 +1,7 @@
 # This is tNet
 tNet is a pathfinding utility for [Starborne](https://www.starborne.com/)
 
-You can download the v0.1 release [here](https://github.com/jzmiller1/tnet/files/1464357/tNet.zip).
+You can download the v0.1.1 release [here](https://github.com/jzmiller1/tnet/files/1464357/tNet.zip).
 
 ## How it Works
 tnet reads data from a CSV file you provide.  The CSV contains the coordinates of
@@ -18,6 +18,9 @@ This tool may be overkill for a single player or the early game but has a lot
 more utility for alliances or confederations with a large number of stations 
 that may wish to move ships over greater distances...or players with stations at
 the far ends of the galaxy!
+
+Note that the program can't easily differentiate stations with the same name
+even if that is allowed in game.
 
 ### Screenshot of Tool and Results
 ![Screenshot of Tool](https://raw.githubusercontent.com/jzmiller1/tnet/master/example.JPG)
