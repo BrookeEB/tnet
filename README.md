@@ -1,7 +1,7 @@
 # This is tNet
 tNet is a pathfinding utility for [Starborne](https://www.starborne.com/)
 
-You can download the v0.1.1 release [here](https://github.com/jzmiller1/tnet/files/1464357/tNet.zip).
+You can download the v0.1.1 release [here](https://github.com/jzmiller1/tnet/releases/download/v0.1.1/tNet.zip).
 
 ## How it Works
 tnet reads data from a CSV file you provide.  The CSV contains the coordinates of
